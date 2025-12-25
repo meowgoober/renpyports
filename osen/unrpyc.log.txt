@@ -1,0 +1,127 @@
+Beginning decompiling
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\gui.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\news.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\options.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\screens.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\script.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\de\common.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\de\options.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\de\screens.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\de\script.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\el\common.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\el\options.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\el\screens.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\el\script.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\es\common.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\es\options.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\es\screens.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\es\script.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\esla\common.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\esla\options.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\esla\screens.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\esla\script.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\fr\common.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\fr\options.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\fr\screens.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\fr\script.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\id\common.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\id\options.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\id\screens.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\id\script.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\ja\common.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\ja\options.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\ja\screens.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\ja\script.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\ko\common.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\ko\options.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\ko\screens.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\ko\script.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\None\common.rpymc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\pl\common.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\pl\options.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\pl\screens.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\pl\script.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\pt\common.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\pt\options.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\pt\screens.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\pt\script.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\ru\common.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\ru\options.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\ru\screens.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\ru\script.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\vi\common.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\vi\options.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\vi\screens.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\vi\script.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\zh\common.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\zh\options.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\zh\screens.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\zh\script.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\zhs\common.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\zhs\options.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\zhs\screens.rpyc
+
+Decompiled C:\Users\dorker\Downloads\one-night-hot-springs-win-linux\onsengame-1.54-pc\game\tl\zhs\script.rpyc
+
+end decompiling
