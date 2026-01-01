@@ -6,10 +6,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>TheVirusGame</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="coi-serviceworker.js"></script>
-  <link rel="manifest" href="manifest.json" crossorigin="use-credentials" />
-  <link rel="icon" href="icons/icon-72x72.png" sizes="72x72" type="image/png" />
-  <link rel="icon" href="icons/icon-512x512.png" sizes="512x512" type="image/png" />
+  
+  <script src="./coi-serviceworker.js"></script>
+  <link rel="manifest" href="./manifest.json" crossorigin="use-credentials" />
+  <link rel="icon" href="./icons/icon-72x72.png" sizes="72x72" type="image/png" />
+  <link rel="icon" href="./icons/icon-512x512.png" sizes="512x512" type="image/png" />
+  <link rel="apple-touch-icon" href="./icons/icon-512x512.png" sizes="512x512" type="image/png" />
 
   <meta name="theme-color" content="#000" />
 
@@ -28,11 +30,8 @@
     #inputText { width: 100%; font-size: 175%; padding: 5px; background: inherit; color: #eee; }
     #inputText:focus { color: #ffffff; }
     #ContextContainer { position: absolute; left: 0px; top: 0px; color: white; }
-    #ContextContainer.shown { background: rgba(0, 0, 0, 0.5); border-radius: 0px 0px 5px 0px; }
-    #ContextButton { text-decoration: none; color: lightgrey; font-size: xx-large; cursor: pointer; user-select: none; -moz-user-select: none; padding: 10px 10px; opacity: .75; }
-    #ContextButton:focus { outline: none; color: #ffffff; opacity: 1.0; }
-    #ContextMenu a { text-decoration: none; color: lightgrey; background: #444; height: 48px; width: 250px; border-radius: 5px; border: 1px solid lightgrey; display: flex; align-items: center; justify-content: center; margin: 5px 5px; opacity: 1.0; }
-    #ContextMenu a:hover { text-decoration: none; background: #666666; color: #ffffff }
+    #ContextButton { text-decoration: none; color: lightgrey; font-size: xx-large; cursor: pointer; padding: 10px 10px; opacity: .75; }
+    #ContextMenu a { text-decoration: none; color: lightgrey; background: #444; height: 48px; width: 250px; border-radius: 5px; border: 1px solid lightgrey; display: flex; align-items: center; justify-content: center; margin: 5px 5px; }
     #presplash { position: absolute; top: 0; left: 0; display: block; margin: auto; width: 100%; height: 100%; object-fit: contain; }
   </style>
 </head>
@@ -40,7 +39,8 @@
 <body>
   <canvas id="canvas" oncontextmenu="event.preventDefault()" tabindex=-1></canvas>
   <div id="overlayDiv"></div>
-  <img id="presplash" src="web-presplash.jpg">
+
+  <img id="presplash" src="./web-presplash.jpg">
 
   <div id="ContextContainer">
     <a id="ContextButton">&#8801;</a><br />
@@ -66,35 +66,27 @@
   </div>
 
   <script>
-      /**
-       * STITCHER LOGIC FOR SPLIT FILES
-       * This replaces the old corsproxy link.
-       */
       async function prepareGameZip() {
-          const parts = ['russian/game.zip', 'russian/game.z01', 'russian/game.z02'];
+          // Explicitly pointing to the files inside /russian/
+          const parts = ['game.zip', 'game.z01', 'game.z02'];
           console.log("Ren'Py: Fetching split game volumes...");
 
           try {
               const responses = await Promise.all(parts.map(p => fetch(p)));
               const blobs = await Promise.all(responses.map(res => {
-                  if (!res.ok) throw new Error(`Volume ${res.url} failed to load.`);
+                  if (!res.ok) throw new Error(`Failed to load ${res.url}`);
                   return res.blob();
               }));
 
-              // Combine volumes into one Zip Blob
               const fullZipBlob = new Blob(blobs, { type: 'application/zip' });
-              
-              // Create local URL for the engine to use
               window.gameZipURL = URL.createObjectURL(fullZipBlob);
-              console.log("Ren'Py: Reassembly complete. Engine starting...");
-
-              // Register Service Worker
+              
               if (navigator.serviceWorker) {
                   navigator.serviceWorker.register('./service-worker.js', { updateViaCache: 'all' });
               }
           } catch (err) {
               console.error("Ren'Py Load Error:", err);
-              document.getElementById('statusTextDiv').innerHTML = "Error loading split volumes: " + err.message;
+              document.getElementById('statusTextDiv').innerHTML = "Load Error: " + err.message;
               document.getElementById('statusDiv').classList.remove('hidden');
           }
       }
@@ -102,7 +94,7 @@
       prepareGameZip();
   </script>
 
-  <script src="renpy-pre.js"></script>
-  <script async type="text/javascript" src="renpy.js"></script>
+  <script src="./renpy-pre.js"></script>
+  <script async type="text/javascript" src="./renpy.js"></script>
 </body>
 </html>
