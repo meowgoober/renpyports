@@ -7,11 +7,11 @@
   <title>TheVirusGame</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <script src="./coi-serviceworker.js"></script>
-  <link rel="manifest" href="./manifest.json" crossorigin="use-credentials" />
-  <link rel="icon" href="./icons/icon-72x72.png" sizes="72x72" type="image/png" />
-  <link rel="icon" href="./icons/icon-512x512.png" sizes="512x512" type="image/png" />
-  <link rel="apple-touch-icon" href="./icons/icon-512x512.png" sizes="512x512" type="image/png" />
+  <script src="russian/coi-serviceworker.js"></script>
+  <link rel="manifest" href="russian/manifest.json" crossorigin="use-credentials" />
+  <link rel="icon" href="russian/icons/icon-72x72.png" sizes="72x72" type="image/png" />
+  <link rel="icon" href="russian/icons/icon-512x512.png" sizes="512x512" type="image/png" />
+  <link rel="apple-touch-icon" href="russian/icons/icon-512x512.png" sizes="512x512" type="image/png" />
 
   <meta name="theme-color" content="#000" />
 
@@ -40,7 +40,7 @@
   <canvas id="canvas" oncontextmenu="event.preventDefault()" tabindex=-1></canvas>
   <div id="overlayDiv"></div>
 
-  <img id="presplash" src="./web-presplash.jpg">
+  <img id="presplash" src="russian/web-presplash.jpg">
 
   <div id="ContextContainer">
     <a id="ContextButton">&#8801;</a><br />
@@ -67,8 +67,8 @@
 
   <script>
       async function prepareGameZip() {
-          // Explicitly pointing to the files inside /russian/
-          const parts = ['game.zip', 'game.z01', 'game.z02'];
+          // Explicitly loading Zip parts from the russian folder
+          const parts = ['russian/game.zip', 'russian/game.z01', 'russian/game.z02'];
           console.log("Ren'Py: Fetching split game volumes...");
 
           try {
@@ -82,7 +82,8 @@
               window.gameZipURL = URL.createObjectURL(fullZipBlob);
               
               if (navigator.serviceWorker) {
-                  navigator.serviceWorker.register('./service-worker.js', { updateViaCache: 'all' });
+                  // Service worker also needs the prefix
+                  navigator.serviceWorker.register('russian/service-worker.js', { updateViaCache: 'all' });
               }
           } catch (err) {
               console.error("Ren'Py Load Error:", err);
@@ -94,7 +95,7 @@
       prepareGameZip();
   </script>
 
-  <script src="./renpy-pre.js"></script>
-  <script async type="text/javascript" src="./renpy.js"></script>
+  <script src="russian/renpy-pre.js"></script>
+  <script async type="text/javascript" src="russian/renpy.js"></script>
 </body>
 </html>
